@@ -1,0 +1,59 @@
+MFVI:
+  add_start_end: true
+  hexa_rank: 150
+  hexa_std: 1
+  iterations: 3
+  normalize_weight: true
+  quad_rank: 150
+  quad_std: 1
+  tag_dim: 150
+  use_hexalinear: false
+  use_quadrilinear: false
+  use_second_order: true
+  use_third_order: false
+  window_size: 1
+ModelFinetuner:
+  distill_mode: false
+  optimizer: SGD
+  sentence_level_batch: true
+embeddings:
+  FastCharacterEmbeddings:
+    char_cnn: true
+    char_embedding_dim: 25
+    hidden_size_char: 25
+  FastWordEmbeddings:
+    additional_empty_embedding: false
+    embeddings: English.txt
+interpolation: 0.5
+is_teacher_list: true
+model:
+  FastSequenceTagger:
+    hidden_size: 256
+    sentence_loss: true
+    use_crf: false
+    use_mfvi: true
+model_name: 3iter_word_char_charcnn_300epoch_32batch_0.1lr_1window_256hidden_en_lample_monolingual_mfvi_sentloss_10patience_baseline_fast_2nd_startend_sentbatch_norelearn_nodev_ner35
+ner:
+  Corpus: CONLL_03
+  tag_dictionary: resources/taggers/ner_tags.pkl
+target_dir: resources/taggers/
+targets: ner
+teacher_annealing: false
+train:
+  fine_tune_mode: false
+  freezing: false
+  language_attention_entropy: false
+  learning_rate: 0.1
+  max_epochs: 300
+  mini_batch_size: 32
+  monitor_test: false
+  patience: 10
+  professor_interpolation: 0.5
+  rootschedule: false
+  save_final_model: false
+  train_language_attention_by_dev: false
+  train_with_dev: false
+  true_reshuffle: false
+  use_unlabeled_data: false
+  use_warmup: false
+trainer: ModelFinetuner

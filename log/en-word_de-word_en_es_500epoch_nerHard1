@@ -1,0 +1,38 @@
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wangxy/workspace/flair2/flair/utils/params.py:104: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  dict_merge.dict_merge(params_dict, yaml.load(f))
+2020-08-19 20:47:07,969 Reading data from /home/wangxy/.flair/datasets/conll_03_toy
+2020-08-19 20:47:07,970 Train: /home/wangxy/.flair/datasets/conll_03_toy/eng.train
+2020-08-19 20:47:07,970 Dev: /home/wangxy/.flair/datasets/conll_03_toy/eng.testa
+2020-08-19 20:47:07,970 Test: /home/wangxy/.flair/datasets/conll_03_toy/eng.testb
+2020-08-19 20:47:08,137 Reading data from /home/wangxy/.flair/datasets/conll_03_german_toy
+2020-08-19 20:47:08,138 Train: /home/wangxy/.flair/datasets/conll_03_german_toy/eng.train
+2020-08-19 20:47:08,138 Dev: /home/wangxy/.flair/datasets/conll_03_german_toy/eng.testa
+2020-08-19 20:47:08,138 Test: /home/wangxy/.flair/datasets/conll_03_german_toy/eng.testb
+2020-08-19 20:47:08,349 {b'<unk>': 0, b'O': 1, b'B-PER': 2, b'E-PER': 3, b'S-LOC': 4, b'B-MISC': 5, b'I-MISC': 6, b'E-MISC': 7, b'S-MISC': 8, b'S-PER': 9, b'B-ORG': 10, b'E-ORG': 11, b'S-ORG': 12, b'I-ORG': 13, b'B-LOC': 14, b'E-LOC': 15, b'I-PER': 16, b'I-LOC': 17, b'<START>': 18, b'<STOP>': 19}
+2020-08-19 20:47:08,349 Corpus: 171 train + 289 dev + 424 test sentences
+[2020-08-19 20:47:08,350 INFO] loading Word2VecKeyedVectors object from /home/wangxy/.flair/embeddings/en-fasttext-news-300d-1M
+[2020-08-19 20:47:10,582 INFO] loading vectors from /home/wangxy/.flair/embeddings/en-fasttext-news-300d-1M.vectors.npy with mmap=None

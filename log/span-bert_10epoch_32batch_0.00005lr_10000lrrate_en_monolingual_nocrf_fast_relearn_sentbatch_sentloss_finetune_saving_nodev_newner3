@@ -1,0 +1,720 @@
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wangxy/workspace/flair2/flair/utils/params.py:104: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  dict_merge.dict_merge(params_dict, yaml.load(f))
+2020-08-26 16:23:49,496 Reading data from /home/wangxy/.flair/datasets/conll_03_new
+2020-08-26 16:23:49,497 Train: /home/wangxy/.flair/datasets/conll_03_new/eng.train
+2020-08-26 16:23:49,497 Dev: /home/wangxy/.flair/datasets/conll_03_new/eng.testa
+2020-08-26 16:23:49,497 Test: /home/wangxy/.flair/datasets/conll_03_new/eng.testb
+2020-08-26 16:23:55,238 {b'<unk>': 0, b'O': 1, b'B-PER': 2, b'E-PER': 3, b'S-LOC': 4, b'B-MISC': 5, b'I-MISC': 6, b'E-MISC': 7, b'S-MISC': 8, b'S-PER': 9, b'B-ORG': 10, b'E-ORG': 11, b'S-ORG': 12, b'I-ORG': 13, b'B-LOC': 14, b'E-LOC': 15, b'I-PER': 16, b'I-LOC': 17, b'<START>': 18, b'<STOP>': 19}
+2020-08-26 16:23:55,238 Corpus: 14040 train + 3250 dev + 3453 test sentences
+[2020-08-26 16:23:55,238 INFO] Model name 'SpanBERT/spanbert-base-cased' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, TurkuNLP/bert-base-finnish-cased-v1, TurkuNLP/bert-base-finnish-uncased-v1, wietsedv/bert-base-dutch-cased). Assuming 'SpanBERT/spanbert-base-cased' is a path, a model identifier, or url to a directory containing tokenizer files.
+[2020-08-26 16:23:56,503 INFO] Lock 139714957974384 acquired on /home/wangxy/.cache/torch/transformers/450d2ca167544c8b0b1363bd390701766966fb14a0a03531c76a7e8ea8231d6b.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1.lock
+[2020-08-26 16:23:56,504 INFO] https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/vocab.txt not found in cache or force_download set to True, downloading to /home/wangxy/.cache/torch/transformers/tmp15cby5pa
+Downloading:   0%|          | 0.00/213k [00:00<?, ?B/s]Downloading:   0%|          | 1.02k/213k [00:00<00:58, 3.62kB/s]Downloading:  16%|█▋        | 34.8k/213k [00:00<00:35, 5.10kB/s]Downloading:  49%|████▉     | 104k/213k [00:00<00:15, 7.22kB/s] Downloading: 100%|██████████| 213k/213k [00:00<00:00, 225kB/s] 
+[2020-08-26 16:23:58,716 INFO] storing https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/vocab.txt in cache at /home/wangxy/.cache/torch/transformers/450d2ca167544c8b0b1363bd390701766966fb14a0a03531c76a7e8ea8231d6b.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+[2020-08-26 16:23:58,716 INFO] creating metadata file for /home/wangxy/.cache/torch/transformers/450d2ca167544c8b0b1363bd390701766966fb14a0a03531c76a7e8ea8231d6b.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+[2020-08-26 16:23:58,717 INFO] Lock 139714957974384 released on /home/wangxy/.cache/torch/transformers/450d2ca167544c8b0b1363bd390701766966fb14a0a03531c76a7e8ea8231d6b.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1.lock
+[2020-08-26 16:24:03,498 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/vocab.txt from cache at /home/wangxy/.cache/torch/transformers/450d2ca167544c8b0b1363bd390701766966fb14a0a03531c76a7e8ea8231d6b.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+[2020-08-26 16:24:03,498 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/added_tokens.json from cache at None
+[2020-08-26 16:24:03,498 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/special_tokens_map.json from cache at None
+[2020-08-26 16:24:03,498 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/tokenizer_config.json from cache at None
+[2020-08-26 16:24:03,498 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/tokenizer.json from cache at None
+[2020-08-26 16:24:04,753 INFO] Lock 139714431086152 acquired on /home/wangxy/.cache/torch/transformers/f657841af52c33ad17850f7918b10fbfc48e447d49d35bee4081df30d7b54545.e736d0f2e9459c34485cfbdd4c15e2b18d74c1c4359ee99166a419eaaab2994b.lock
+[2020-08-26 16:24:04,754 INFO] https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/config.json not found in cache or force_download set to True, downloading to /home/wangxy/.cache/torch/transformers/tmp4yhjzo5p
+Downloading:   0%|          | 0.00/413 [00:00<?, ?B/s]Downloading: 100%|██████████| 413/413 [00:00<00:00, 147kB/s]
+[2020-08-26 16:24:05,981 INFO] storing https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/config.json in cache at /home/wangxy/.cache/torch/transformers/f657841af52c33ad17850f7918b10fbfc48e447d49d35bee4081df30d7b54545.e736d0f2e9459c34485cfbdd4c15e2b18d74c1c4359ee99166a419eaaab2994b
+[2020-08-26 16:24:05,982 INFO] creating metadata file for /home/wangxy/.cache/torch/transformers/f657841af52c33ad17850f7918b10fbfc48e447d49d35bee4081df30d7b54545.e736d0f2e9459c34485cfbdd4c15e2b18d74c1c4359ee99166a419eaaab2994b
+[2020-08-26 16:24:05,982 INFO] Lock 139714431086152 released on /home/wangxy/.cache/torch/transformers/f657841af52c33ad17850f7918b10fbfc48e447d49d35bee4081df30d7b54545.e736d0f2e9459c34485cfbdd4c15e2b18d74c1c4359ee99166a419eaaab2994b.lock
+[2020-08-26 16:24:05,983 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/SpanBERT/spanbert-base-cased/config.json from cache at /home/wangxy/.cache/torch/transformers/f657841af52c33ad17850f7918b10fbfc48e447d49d35bee4081df30d7b54545.e736d0f2e9459c34485cfbdd4c15e2b18d74c1c4359ee99166a419eaaab2994b
+[2020-08-26 16:24:05,983 INFO] Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+[2020-08-26 16:24:09,521 INFO] Lock 139714432964480 acquired on /home/wangxy/.cache/torch/transformers/01f1fe3de00e39694b2748b00a7f61124ed9fed42ff17cb61c13228bb47d59cc.f4602310509f085ddc87b4556fcced076b613c467122f916d97a25ee80c647bd.lock
+[2020-08-26 16:24:09,522 INFO] https://cdn.huggingface.co/SpanBERT/spanbert-base-cased/pytorch_model.bin not found in cache or force_download set to True, downloading to /home/wangxy/.cache/torch/transformers/tmp41b3jjhc
+Downloading:   0%|          | 0.00/215M [00:00<?, ?B/s]Downloading:   0%|          | 17.4k/215M [00:00<51:08, 70.2kB/s]Downloading:   0%|          | 52.2k/215M [00:00<42:50, 83.8kB/s]Downloading:   0%|          | 122k/215M [00:00<33:26, 107kB/s]  Downloading:   0%|          | 261k/215M [00:00<25:09, 143kB/s]Downloading:   0%|          | 573k/215M [00:01<18:23, 195kB/s]Downloading:   1%|          | 1.17M/215M [00:01<13:15, 269kB/s]Downloading:   1%|          | 2.35M/215M [00:01<09:26, 376kB/s]Downloading:   2%|▏         | 4.64M/215M [00:01<06:38, 529kB/s]Downloading:   3%|▎         | 7.24M/215M [00:02<04:41, 741kB/s]Downloading:   5%|▍         | 9.87M/215M [00:02<03:19, 1.03MB/s]Downloading:   6%|▌         | 12.5M/215M [00:02<02:23, 1.42MB/s]Downloading:   7%|▋         | 15.1M/215M [00:02<01:44, 1.92MB/s]Downloading:   8%|▊         | 17.7M/215M [00:03<01:17, 2.55MB/s]Downloading:   9%|▉         | 20.3M/215M [00:03<00:58, 3.33MB/s]Downloading:  11%|█         | 23.0M/215M [00:03<00:45, 4.21MB/s]Downloading:  12%|█▏        | 25.6M/215M [00:03<00:36, 5.19MB/s]Downloading:  13%|█▎        | 28.2M/215M [00:03<00:30, 6.20MB/s]Downloading:  14%|█▍        | 30.8M/215M [00:04<00:25, 7.15MB/s]Downloading:  16%|█▌        | 33.4M/215M [00:04<00:22, 8.04MB/s]Downloading:  17%|█▋        | 36.0M/215M [00:04<00:20, 8.80MB/s]Downloading:  18%|█▊        | 38.7M/215M [00:04<00:18, 9.43MB/s]Downloading:  19%|█▉        | 41.3M/215M [00:05<00:17, 9.91MB/s]Downloading:  20%|██        | 43.9M/215M [00:05<00:16, 10.3MB/s]Downloading:  22%|██▏       | 46.5M/215M [00:05<00:16, 10.6MB/s]Downloading:  23%|██▎       | 49.1M/215M [00:05<00:15, 10.6MB/s]Downloading:  24%|██▍       | 51.7M/215M [00:06<00:14, 11.0MB/s]Downloading:  25%|██▌       | 54.3M/215M [00:06<00:14, 11.0MB/s]Downloading:  26%|██▋       | 57.0M/215M [00:06<00:14, 11.1MB/s]Downloading:  28%|██▊       | 59.6M/215M [00:06<00:13, 11.2MB/s]Downloading:  29%|██▉       | 62.2M/215M [00:06<00:13, 11.1MB/s]Downloading:  30%|███       | 64.8M/215M [00:07<00:13, 11.2MB/s]Downloading:  31%|███▏      | 67.4M/215M [00:07<00:13, 11.2MB/s]Downloading:  33%|███▎      | 70.0M/215M [00:07<00:12, 11.2MB/s]Downloading:  34%|███▎      | 72.7M/215M [00:07<00:12, 11.2MB/s]Downloading:  35%|███▍      | 75.3M/215M [00:08<00:12, 11.3MB/s]Downloading:  36%|███▌      | 77.9M/215M [00:08<00:12, 11.3MB/s]Downloading:  37%|███▋      | 80.5M/215M [00:08<00:11, 11.3MB/s]Downloading:  39%|███▊      | 83.1M/215M [00:08<00:11, 11.2MB/s]Downloading:  40%|███▉      | 85.8M/215M [00:09<00:11, 11.3MB/s]Downloading:  41%|████      | 88.4M/215M [00:09<00:10, 12.0MB/s]Downloading:  42%|████▏     | 91.0M/215M [00:09<00:11, 11.1MB/s]Downloading:  43%|████▎     | 93.6M/215M [00:09<00:10, 11.1MB/s]Downloading:  45%|████▍     | 96.2M/215M [00:09<00:09, 12.7MB/s]Downloading:  45%|████▌     | 97.6M/215M [00:10<00:09, 12.3MB/s]Downloading:  46%|████▌     | 98.9M/215M [00:10<00:12, 9.50MB/s]Downloading:  47%|████▋     | 101M/215M [00:10<00:11, 9.95MB/s] Downloading:  48%|████▊     | 104M/215M [00:10<00:10, 10.3MB/s]Downloading:  50%|████▉     | 107M/215M [00:10<00:10, 10.6MB/s]Downloading:  51%|█████     | 109M/215M [00:11<00:09, 10.8MB/s]Downloading:  52%|█████▏    | 112M/215M [00:11<00:09, 10.9MB/s]Downloading:  53%|█████▎    | 115M/215M [00:11<00:09, 11.0MB/s]Downloading:  54%|█████▍    | 117M/215M [00:11<00:08, 11.1MB/s]Downloading:  56%|█████▌    | 120M/215M [00:12<00:08, 11.1MB/s]Downloading:  57%|█████▋    | 122M/215M [00:12<00:08, 11.2MB/s]Downloading:  58%|█████▊    | 125M/215M [00:12<00:08, 11.2MB/s]Downloading:  59%|█████▉    | 128M/215M [00:12<00:07, 11.2MB/s]Downloading:  60%|██████    | 130M/215M [00:13<00:07, 11.2MB/s]Downloading:  62%|██████▏   | 133M/215M [00:13<00:07, 11.2MB/s]Downloading:  63%|██████▎   | 135M/215M [00:13<00:07, 11.2MB/s]Downloading:  64%|██████▍   | 138M/215M [00:13<00:06, 11.3MB/s]Downloading:  65%|██████▌   | 141M/215M [00:13<00:06, 11.3MB/s]Downloading:  67%|██████▋   | 143M/215M [00:14<00:06, 11.2MB/s]Downloading:  68%|██████▊   | 146M/215M [00:14<00:06, 11.2MB/s]Downloading:  69%|██████▉   | 149M/215M [00:14<00:05, 11.3MB/s]Downloading:  70%|███████   | 151M/215M [00:14<00:05, 12.0MB/s]Downloading:  71%|███████▏  | 154M/215M [00:15<00:05, 11.1MB/s]Downloading:  73%|███████▎  | 156M/215M [00:15<00:05, 11.1MB/s]Downloading:  74%|███████▍  | 159M/215M [00:15<00:05, 11.2MB/s]Downloading:  75%|███████▌  | 162M/215M [00:15<00:04, 11.2MB/s]Downloading:  76%|███████▌  | 164M/215M [00:16<00:04, 11.2MB/s]Downloading:  77%|███████▋  | 167M/215M [00:16<00:04, 11.2MB/s]Downloading:  79%|███████▊  | 169M/215M [00:16<00:04, 11.2MB/s]Downloading:  80%|███████▉  | 172M/215M [00:16<00:03, 11.2MB/s]Downloading:  81%|████████  | 175M/215M [00:16<00:03, 11.3MB/s]Downloading:  82%|████████▏ | 177M/215M [00:17<00:03, 11.3MB/s]Downloading:  84%|████████▎ | 180M/215M [00:17<00:03, 11.3MB/s]Downloading:  85%|████████▍ | 183M/215M [00:17<00:02, 11.3MB/s]Downloading:  86%|████████▌ | 185M/215M [00:17<00:02, 11.3MB/s]Downloading:  87%|████████▋ | 188M/215M [00:18<00:02, 11.3MB/s]Downloading:  88%|████████▊ | 190M/215M [00:18<00:02, 11.3MB/s]Downloading:  90%|████████▉ | 193M/215M [00:18<00:01, 11.3MB/s]Downloading:  91%|█████████ | 196M/215M [00:18<00:01, 11.3MB/s]Downloading:  92%|█████████▏| 198M/215M [00:19<00:01, 11.3MB/s]Downloading:  93%|█████████▎| 201M/215M [00:19<00:01, 11.2MB/s]Downloading:  94%|█████████▍| 204M/215M [00:19<00:01, 11.3MB/s]Downloading:  96%|█████████▌| 206M/215M [00:19<00:00, 11.2MB/s]Downloading:  97%|█████████▋| 209M/215M [00:19<00:00, 11.3MB/s]Downloading:  98%|█████████▊| 211M/215M [00:20<00:00, 11.3MB/s]Downloading:  99%|█████████▉| 214M/215M [00:20<00:00, 11.3MB/s]Downloading: 100%|██████████| 215M/215M [00:20<00:00, 10.5MB/s]
+[2020-08-26 16:24:35,378 INFO] storing https://cdn.huggingface.co/SpanBERT/spanbert-base-cased/pytorch_model.bin in cache at /home/wangxy/.cache/torch/transformers/01f1fe3de00e39694b2748b00a7f61124ed9fed42ff17cb61c13228bb47d59cc.f4602310509f085ddc87b4556fcced076b613c467122f916d97a25ee80c647bd
+[2020-08-26 16:24:35,379 INFO] creating metadata file for /home/wangxy/.cache/torch/transformers/01f1fe3de00e39694b2748b00a7f61124ed9fed42ff17cb61c13228bb47d59cc.f4602310509f085ddc87b4556fcced076b613c467122f916d97a25ee80c647bd
+[2020-08-26 16:24:35,379 INFO] Lock 139714432964480 released on /home/wangxy/.cache/torch/transformers/01f1fe3de00e39694b2748b00a7f61124ed9fed42ff17cb61c13228bb47d59cc.f4602310509f085ddc87b4556fcced076b613c467122f916d97a25ee80c647bd.lock
+[2020-08-26 16:24:35,379 INFO] loading weights file https://cdn.huggingface.co/SpanBERT/spanbert-base-cased/pytorch_model.bin from cache at /home/wangxy/.cache/torch/transformers/01f1fe3de00e39694b2748b00a7f61124ed9fed42ff17cb61c13228bb47d59cc.f4602310509f085ddc87b4556fcced076b613c467122f916d97a25ee80c647bd
+[2020-08-26 16:24:37,308 INFO] All model checkpoint weights were used when initializing BertModel.
+
+[2020-08-26 16:24:37,308 WARNING] Some weights of BertModel were not initialized from the model checkpoint at SpanBERT/spanbert-base-cased and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Corpus: 14040 train + 3250 dev + 3453 test sentences
+2020-08-26 16:24:39,849 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Model: "FastSequenceTagger(
+  (embeddings): StackedEmbeddings(
+    (list_embedding_0): BertEmbeddings(
+      (model): BertModel(
+        (embeddings): BertEmbeddings(
+          (word_embeddings): Embedding(28996, 768, padding_idx=0)
+          (position_embeddings): Embedding(512, 768)
+          (token_type_embeddings): Embedding(2, 768)
+          (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder): BertEncoder(
+          (layer): ModuleList(
+            (0): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (1): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (2): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (3): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (4): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (5): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (6): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (7): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (8): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (9): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (10): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (11): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+          )
+        )
+        (pooler): BertPooler(
+          (dense): Linear(in_features=768, out_features=768, bias=True)
+          (activation): Tanh()
+        )
+      )
+    )
+  )
+  (word_dropout): WordDropout(p=0.1)
+  (embedding2nn): Linear(in_features=768, out_features=768, bias=True)
+  (linear): Linear(in_features=768, out_features=20, bias=True)
+)"
+2020-08-26 16:24:39,851 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Corpus: "Corpus: 14040 train + 3250 dev + 3453 test sentences"
+2020-08-26 16:24:39,851 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Parameters:
+2020-08-26 16:24:39,851  - Optimizer: "AdamW"
+2020-08-26 16:24:39,851  - learning_rate: "5e-05"
+2020-08-26 16:24:39,851  - mini_batch_size: "32"
+2020-08-26 16:24:39,851  - patience: "10"
+2020-08-26 16:24:39,851  - anneal_factor: "0.5"
+2020-08-26 16:24:39,851  - max_epochs: "10"
+2020-08-26 16:24:39,851  - shuffle: "True"
+2020-08-26 16:24:39,851  - train_with_dev: "False"
+2020-08-26 16:24:39,851  - word min_freq: "-1"
+2020-08-26 16:24:39,851 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Model training base path: "resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3"
+2020-08-26 16:24:39,851 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Device: cuda:0
+2020-08-26 16:24:39,851 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:39,851 Embeddings storage mode: cpu
+2020-08-26 16:24:47,601 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:24:47,603 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:24:48,192 epoch 1 - iter 0/439 - loss 46.01245880 - samples/sec: 54.29 - decode_sents/sec: 20342.18
+2020-08-26 16:25:00,109 epoch 1 - iter 43/439 - loss 45.34207197 - samples/sec: 115.48 - decode_sents/sec: 1267595.50
+2020-08-26 16:25:10,467 epoch 1 - iter 86/439 - loss 37.57288750 - samples/sec: 132.85 - decode_sents/sec: 1216047.68
+2020-08-26 16:25:22,165 epoch 1 - iter 129/439 - loss 33.33348207 - samples/sec: 117.64 - decode_sents/sec: 1224042.91
+2020-08-26 16:25:32,636 epoch 1 - iter 172/439 - loss 29.71674165 - samples/sec: 131.42 - decode_sents/sec: 1296352.72
+2020-08-26 16:25:43,059 epoch 1 - iter 215/439 - loss 26.89766371 - samples/sec: 132.03 - decode_sents/sec: 1405250.13
+2020-08-26 16:25:54,553 epoch 1 - iter 258/439 - loss 24.72295568 - samples/sec: 119.73 - decode_sents/sec: 1431034.54
+2020-08-26 16:26:05,186 epoch 1 - iter 301/439 - loss 23.09514654 - samples/sec: 128.67 - decode_sents/sec: 1309105.15
+2020-08-26 16:26:17,139 epoch 1 - iter 344/439 - loss 21.74020140 - samples/sec: 115.13 - decode_sents/sec: 1171612.32
+2020-08-26 16:26:28,516 epoch 1 - iter 387/439 - loss 20.48103050 - samples/sec: 120.96 - decode_sents/sec: 1455944.07
+2020-08-26 16:26:38,210 epoch 1 - iter 430/439 - loss 19.45974521 - samples/sec: 141.95 - decode_sents/sec: 1253009.62
+2020-08-26 16:26:39,563 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:26:39,563 EPOCH 1 done: loss 19.2137 - lr 0.0
+2020-08-26 16:26:39,564 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:26:50,267 Macro Average: 25.11	Macro avg loss: 7.10
+CONLL_03_NEW	25.11	
+2020-08-26 16:26:50,335 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:26:50,335 BAD EPOCHS (no improvement): 11
+2020-08-26 16:26:50,335 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:26:50,335 ==================Saving the current best model: 25.11==================
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type StackedEmbeddings. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertEmbeddings. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertModel. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Embedding. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type LayerNorm. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Dropout. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertEncoder. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type ModuleList. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertLayer. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertAttention. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertSelfAttention. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Linear. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertSelfOutput. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertIntermediate. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertOutput. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BertPooler. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Tanh. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+2020-08-26 16:26:50,862 ==================Saving the best language model: 25.11==================
+[2020-08-26 16:26:50,878 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:26:51,300 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:26:51,300 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:26:51,302 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:26:51,536 epoch 2 - iter 0/439 - loss 9.49645329 - samples/sec: 136.81 - decode_sents/sec: 26306.89
+2020-08-26 16:27:03,284 epoch 2 - iter 43/439 - loss 9.53510170 - samples/sec: 117.13 - decode_sents/sec: 842780.71
+2020-08-26 16:27:15,472 epoch 2 - iter 86/439 - loss 9.32924857 - samples/sec: 112.91 - decode_sents/sec: 790272.81
+2020-08-26 16:27:25,980 epoch 2 - iter 129/439 - loss 8.64961357 - samples/sec: 130.97 - decode_sents/sec: 813326.14
+2020-08-26 16:27:37,184 epoch 2 - iter 172/439 - loss 8.29776525 - samples/sec: 122.83 - decode_sents/sec: 668136.41
+2020-08-26 16:27:49,291 epoch 2 - iter 215/439 - loss 8.19566127 - samples/sec: 113.67 - decode_sents/sec: 740772.98
+2020-08-26 16:28:03,630 epoch 2 - iter 258/439 - loss 8.33188306 - samples/sec: 95.97 - decode_sents/sec: 726780.29
+2020-08-26 16:28:15,516 epoch 2 - iter 301/439 - loss 8.05000901 - samples/sec: 115.11 - decode_sents/sec: 985369.72
+2020-08-26 16:28:27,375 epoch 2 - iter 344/439 - loss 7.76387835 - samples/sec: 116.05 - decode_sents/sec: 736895.08
+2020-08-26 16:28:40,653 epoch 2 - iter 387/439 - loss 7.73706872 - samples/sec: 103.65 - decode_sents/sec: 762399.25
+2020-08-26 16:28:54,530 epoch 2 - iter 430/439 - loss 7.61413213 - samples/sec: 99.17 - decode_sents/sec: 730829.72
+2020-08-26 16:28:56,495 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:28:56,496 EPOCH 2 done: loss 7.5655 - lr 5e-05
+2020-08-26 16:28:56,496 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:29:08,145 Macro Average: 79.83	Macro avg loss: 2.41
+CONLL_03_NEW	79.83	
+2020-08-26 16:29:08,199 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:29:08,199 BAD EPOCHS (no improvement): 11
+2020-08-26 16:29:08,199 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:29:08,199 ==================Saving the current best model: 79.83==================
+2020-08-26 16:29:09,861 ==================Saving the best language model: 79.83==================
+[2020-08-26 16:29:09,957 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:29:11,641 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:29:11,641 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:29:11,643 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:29:11,808 epoch 3 - iter 0/439 - loss 0.90129483 - samples/sec: 193.67 - decode_sents/sec: 20693.45
+2020-08-26 16:29:23,005 epoch 3 - iter 43/439 - loss 4.41034156 - samples/sec: 122.91 - decode_sents/sec: 605726.52
+2020-08-26 16:29:35,225 epoch 3 - iter 86/439 - loss 4.79118471 - samples/sec: 112.61 - decode_sents/sec: 763508.71
+2020-08-26 16:29:47,878 epoch 3 - iter 129/439 - loss 5.25613270 - samples/sec: 108.77 - decode_sents/sec: 837035.87
+2020-08-26 16:30:00,894 epoch 3 - iter 172/439 - loss 5.41391352 - samples/sec: 105.10 - decode_sents/sec: 798026.13
+2020-08-26 16:30:13,034 epoch 3 - iter 215/439 - loss 5.16642787 - samples/sec: 113.36 - decode_sents/sec: 812524.61
+2020-08-26 16:30:25,184 epoch 3 - iter 258/439 - loss 5.14319674 - samples/sec: 113.26 - decode_sents/sec: 831848.13
+2020-08-26 16:30:37,437 epoch 3 - iter 301/439 - loss 5.13020953 - samples/sec: 112.31 - decode_sents/sec: 681871.73
+2020-08-26 16:30:50,341 epoch 3 - iter 344/439 - loss 5.15825332 - samples/sec: 106.65 - decode_sents/sec: 766245.66
+2020-08-26 16:31:02,658 epoch 3 - iter 387/439 - loss 5.12196830 - samples/sec: 111.74 - decode_sents/sec: 828623.45
+2020-08-26 16:31:13,608 epoch 3 - iter 430/439 - loss 4.94387823 - samples/sec: 125.67 - decode_sents/sec: 599497.49
+2020-08-26 16:31:16,098 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:31:16,099 EPOCH 3 done: loss 4.9209 - lr 4.4444444444444447e-05
+2020-08-26 16:31:16,099 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:31:28,521 Macro Average: 88.05	Macro avg loss: 1.52
+CONLL_03_NEW	88.05	
+2020-08-26 16:31:28,572 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:31:28,572 BAD EPOCHS (no improvement): 11
+2020-08-26 16:31:28,572 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:31:28,572 ==================Saving the current best model: 88.05==================
+2020-08-26 16:31:30,225 ==================Saving the best language model: 88.05==================
+[2020-08-26 16:31:30,378 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:31:32,107 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:31:32,108 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:31:32,109 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:31:32,411 epoch 4 - iter 0/439 - loss 4.11642981 - samples/sec: 106.03 - decode_sents/sec: 15534.46
+2020-08-26 16:31:43,794 epoch 4 - iter 43/439 - loss 3.38571567 - samples/sec: 120.89 - decode_sents/sec: 582025.24
+2020-08-26 16:31:56,521 epoch 4 - iter 86/439 - loss 3.67124306 - samples/sec: 107.50 - decode_sents/sec: 758868.92
+2020-08-26 16:32:08,795 epoch 4 - iter 129/439 - loss 3.83620765 - samples/sec: 112.12 - decode_sents/sec: 553130.37
+2020-08-26 16:32:19,944 epoch 4 - iter 172/439 - loss 3.64438844 - samples/sec: 123.44 - decode_sents/sec: 803698.97
+2020-08-26 16:32:32,638 epoch 4 - iter 215/439 - loss 3.68128717 - samples/sec: 108.41 - decode_sents/sec: 702454.03
+2020-08-26 16:32:47,738 epoch 4 - iter 258/439 - loss 3.85617784 - samples/sec: 91.13 - decode_sents/sec: 512054.15
+2020-08-26 16:32:58,925 epoch 4 - iter 301/439 - loss 3.64227505 - samples/sec: 123.02 - decode_sents/sec: 1022565.96
+2020-08-26 16:33:11,861 epoch 4 - iter 344/439 - loss 3.61464422 - samples/sec: 106.38 - decode_sents/sec: 692591.18
+2020-08-26 16:33:24,021 epoch 4 - iter 387/439 - loss 3.59531752 - samples/sec: 113.17 - decode_sents/sec: 739823.39
+2020-08-26 16:33:35,971 epoch 4 - iter 430/439 - loss 3.47527004 - samples/sec: 115.16 - decode_sents/sec: 882201.51
+2020-08-26 16:33:38,640 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:33:38,641 EPOCH 4 done: loss 3.4886 - lr 3.888888888888889e-05
+2020-08-26 16:33:38,641 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:33:51,754 Macro Average: 89.78	Macro avg loss: 1.43
+CONLL_03_NEW	89.78	
+2020-08-26 16:33:51,822 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:33:51,823 BAD EPOCHS (no improvement): 11
+2020-08-26 16:33:51,823 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:33:51,823 ==================Saving the current best model: 89.78==================
+2020-08-26 16:33:53,562 ==================Saving the best language model: 89.78==================
+[2020-08-26 16:33:53,736 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:33:55,479 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:33:55,479 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:33:55,480 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:33:55,995 epoch 5 - iter 0/439 - loss 10.37355042 - samples/sec: 62.18 - decode_sents/sec: 11386.93
+2020-08-26 16:34:10,315 epoch 5 - iter 43/439 - loss 3.81732035 - samples/sec: 95.54 - decode_sents/sec: 661723.89
+2020-08-26 16:34:25,037 epoch 5 - iter 86/439 - loss 3.55317837 - samples/sec: 93.48 - decode_sents/sec: 658080.08
+2020-08-26 16:34:38,936 epoch 5 - iter 129/439 - loss 3.24457744 - samples/sec: 99.01 - decode_sents/sec: 715428.57
+2020-08-26 16:34:49,985 epoch 5 - iter 172/439 - loss 3.08683574 - samples/sec: 124.55 - decode_sents/sec: 463600.47
+2020-08-26 16:35:01,375 epoch 5 - iter 215/439 - loss 2.88048190 - samples/sec: 120.82 - decode_sents/sec: 723863.33
+2020-08-26 16:35:12,794 epoch 5 - iter 258/439 - loss 2.72718436 - samples/sec: 120.51 - decode_sents/sec: 675250.06
+2020-08-26 16:35:25,906 epoch 5 - iter 301/439 - loss 2.79844764 - samples/sec: 104.95 - decode_sents/sec: 459539.96
+2020-08-26 16:35:39,018 epoch 5 - iter 344/439 - loss 2.80675742 - samples/sec: 104.96 - decode_sents/sec: 632755.43
+2020-08-26 16:35:52,606 epoch 5 - iter 387/439 - loss 2.78268150 - samples/sec: 101.27 - decode_sents/sec: 873654.60
+2020-08-26 16:36:03,358 epoch 5 - iter 430/439 - loss 2.66146160 - samples/sec: 127.99 - decode_sents/sec: 651542.37
+2020-08-26 16:36:05,553 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:36:05,554 EPOCH 5 done: loss 2.6395 - lr 3.3333333333333335e-05
+2020-08-26 16:36:05,554 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:36:19,347 Macro Average: 91.14	Macro avg loss: 1.46
+CONLL_03_NEW	91.14	
+2020-08-26 16:36:19,430 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:36:19,431 BAD EPOCHS (no improvement): 11
+2020-08-26 16:36:19,431 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:36:19,432 ==================Saving the current best model: 91.14==================
+2020-08-26 16:36:21,262 ==================Saving the best language model: 91.14==================
+[2020-08-26 16:36:21,281 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:36:23,053 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:36:23,053 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:36:23,054 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:36:23,344 epoch 6 - iter 0/439 - loss 1.60184765 - samples/sec: 110.64 - decode_sents/sec: 12425.27
+2020-08-26 16:36:36,540 epoch 6 - iter 43/439 - loss 1.96804266 - samples/sec: 104.28 - decode_sents/sec: 1058965.56
+2020-08-26 16:36:48,537 epoch 6 - iter 86/439 - loss 1.84732367 - samples/sec: 114.71 - decode_sents/sec: 658530.61
+2020-08-26 16:36:59,907 epoch 6 - iter 129/439 - loss 1.89611123 - samples/sec: 121.03 - decode_sents/sec: 485682.26
+2020-08-26 16:37:12,402 epoch 6 - iter 172/439 - loss 1.98723263 - samples/sec: 110.13 - decode_sents/sec: 1105836.81
+2020-08-26 16:37:23,547 epoch 6 - iter 215/439 - loss 1.96816997 - samples/sec: 123.49 - decode_sents/sec: 1063257.61
+2020-08-26 16:37:37,808 epoch 6 - iter 258/439 - loss 1.98192496 - samples/sec: 96.49 - decode_sents/sec: 1158675.43
+2020-08-26 16:37:49,731 epoch 6 - iter 301/439 - loss 1.92090992 - samples/sec: 115.41 - decode_sents/sec: 522484.37
+2020-08-26 16:38:02,582 epoch 6 - iter 344/439 - loss 1.90666645 - samples/sec: 107.09 - decode_sents/sec: 773537.37
+2020-08-26 16:38:16,731 epoch 6 - iter 387/439 - loss 1.93786025 - samples/sec: 96.69 - decode_sents/sec: 969879.63
+2020-08-26 16:38:28,910 epoch 6 - iter 430/439 - loss 1.92527472 - samples/sec: 112.99 - decode_sents/sec: 1271785.43
+2020-08-26 16:38:31,417 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:38:31,418 EPOCH 6 done: loss 1.9381 - lr 2.777777777777778e-05
+2020-08-26 16:38:31,418 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:38:46,115 Macro Average: 91.27	Macro avg loss: 1.50
+CONLL_03_NEW	91.27	
+2020-08-26 16:38:46,179 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:38:46,181 BAD EPOCHS (no improvement): 11
+2020-08-26 16:38:46,181 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:38:46,181 ==================Saving the current best model: 91.27==================
+2020-08-26 16:38:47,852 ==================Saving the best language model: 91.27==================
+[2020-08-26 16:38:47,959 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:38:49,677 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:38:49,677 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:38:49,679 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:38:49,901 epoch 7 - iter 0/439 - loss 3.55490017 - samples/sec: 144.10 - decode_sents/sec: 13096.97
+2020-08-26 16:39:03,599 epoch 7 - iter 43/439 - loss 2.17243833 - samples/sec: 100.46 - decode_sents/sec: 567879.79
+2020-08-26 16:39:15,732 epoch 7 - iter 86/439 - loss 1.96764499 - samples/sec: 112.76 - decode_sents/sec: 624285.48
+2020-08-26 16:39:27,320 epoch 7 - iter 129/439 - loss 1.89954387 - samples/sec: 118.75 - decode_sents/sec: 743923.99
+2020-08-26 16:39:40,254 epoch 7 - iter 172/439 - loss 1.81194121 - samples/sec: 106.40 - decode_sents/sec: 1024562.81
+2020-08-26 16:39:51,990 epoch 7 - iter 215/439 - loss 1.73101301 - samples/sec: 117.25 - decode_sents/sec: 732313.45
+2020-08-26 16:40:05,237 epoch 7 - iter 258/439 - loss 1.73388421 - samples/sec: 103.89 - decode_sents/sec: 751871.07
+2020-08-26 16:40:19,113 epoch 7 - iter 301/439 - loss 1.75986179 - samples/sec: 99.17 - decode_sents/sec: 1192676.65
+2020-08-26 16:40:31,873 epoch 7 - iter 344/439 - loss 1.76729301 - samples/sec: 107.85 - decode_sents/sec: 667827.16
+2020-08-26 16:40:43,871 epoch 7 - iter 387/439 - loss 1.73018378 - samples/sec: 114.69 - decode_sents/sec: 923270.25
+2020-08-26 16:40:56,203 epoch 7 - iter 430/439 - loss 1.71939800 - samples/sec: 111.59 - decode_sents/sec: 418305.60
+2020-08-26 16:40:58,377 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:40:58,386 EPOCH 7 done: loss 1.7094 - lr 2.2222222222222223e-05
+2020-08-26 16:40:58,387 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:41:13,082 Macro Average: 91.80	Macro avg loss: 1.65
+CONLL_03_NEW	91.80	
+2020-08-26 16:41:13,150 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:41:13,152 BAD EPOCHS (no improvement): 11
+2020-08-26 16:41:13,152 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:41:13,152 ==================Saving the current best model: 91.8==================
+2020-08-26 16:41:14,592 ==================Saving the best language model: 91.8==================
+[2020-08-26 16:41:14,671 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:41:16,373 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:41:16,373 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:41:16,375 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:41:16,598 epoch 8 - iter 0/439 - loss 0.23028407 - samples/sec: 143.49 - decode_sents/sec: 16241.25
+2020-08-26 16:41:29,469 epoch 8 - iter 43/439 - loss 1.54983327 - samples/sec: 106.29 - decode_sents/sec: 527711.57
+2020-08-26 16:41:40,264 epoch 8 - iter 86/439 - loss 1.44836825 - samples/sec: 127.48 - decode_sents/sec: 692757.45
+2020-08-26 16:41:52,593 epoch 8 - iter 129/439 - loss 1.47387904 - samples/sec: 111.62 - decode_sents/sec: 757297.24
+2020-08-26 16:42:05,377 epoch 8 - iter 172/439 - loss 1.50792614 - samples/sec: 107.64 - decode_sents/sec: 665363.42
+2020-08-26 16:42:18,720 epoch 8 - iter 215/439 - loss 1.49113244 - samples/sec: 103.14 - decode_sents/sec: 562510.95
+2020-08-26 16:42:32,114 epoch 8 - iter 258/439 - loss 1.49765590 - samples/sec: 102.74 - decode_sents/sec: 516175.86
+2020-08-26 16:42:45,367 epoch 8 - iter 301/439 - loss 1.51806284 - samples/sec: 103.83 - decode_sents/sec: 731385.41
+2020-08-26 16:42:57,581 epoch 8 - iter 344/439 - loss 1.48933998 - samples/sec: 112.67 - decode_sents/sec: 684946.87
+2020-08-26 16:43:10,944 epoch 8 - iter 387/439 - loss 1.49338730 - samples/sec: 102.97 - decode_sents/sec: 845868.72
+2020-08-26 16:43:22,580 epoch 8 - iter 430/439 - loss 1.49427978 - samples/sec: 118.27 - decode_sents/sec: 273084.24
+2020-08-26 16:43:24,539 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:43:24,540 EPOCH 8 done: loss 1.4875 - lr 1.6666666666666667e-05
+2020-08-26 16:43:24,540 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:43:38,211 Macro Average: 91.53	Macro avg loss: 1.65
+CONLL_03_NEW	91.53	
+2020-08-26 16:43:38,281 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:43:38,283 BAD EPOCHS (no improvement): 11
+2020-08-26 16:43:38,283 GLOBAL BAD EPOCHS (no improvement): 1
+2020-08-26 16:43:38,283 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:43:38,285 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:43:38,595 epoch 9 - iter 0/439 - loss 2.45283079 - samples/sec: 103.24 - decode_sents/sec: 11364.75
+2020-08-26 16:43:51,425 epoch 9 - iter 43/439 - loss 1.08327625 - samples/sec: 107.26 - decode_sents/sec: 697867.27
+2020-08-26 16:44:03,210 epoch 9 - iter 86/439 - loss 1.25025424 - samples/sec: 116.09 - decode_sents/sec: 683560.62
+2020-08-26 16:44:16,674 epoch 9 - iter 129/439 - loss 1.34460110 - samples/sec: 102.21 - decode_sents/sec: 527595.05
+2020-08-26 16:44:29,174 epoch 9 - iter 172/439 - loss 1.43342856 - samples/sec: 110.08 - decode_sents/sec: 849729.43
+2020-08-26 16:44:41,370 epoch 9 - iter 215/439 - loss 1.35151738 - samples/sec: 112.84 - decode_sents/sec: 652131.33
+2020-08-26 16:44:54,414 epoch 9 - iter 258/439 - loss 1.50053029 - samples/sec: 105.50 - decode_sents/sec: 453260.21
+2020-08-26 16:45:09,061 epoch 9 - iter 301/439 - loss 1.49711573 - samples/sec: 93.95 - decode_sents/sec: 518494.50
+2020-08-26 16:45:21,540 epoch 9 - iter 344/439 - loss 1.47518399 - samples/sec: 110.27 - decode_sents/sec: 954417.45
+2020-08-26 16:45:33,820 epoch 9 - iter 387/439 - loss 1.47963247 - samples/sec: 112.06 - decode_sents/sec: 790597.58
+2020-08-26 16:45:45,151 epoch 9 - iter 430/439 - loss 1.46947756 - samples/sec: 121.45 - decode_sents/sec: 548608.58
+2020-08-26 16:45:47,409 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:45:47,410 EPOCH 9 done: loss 1.4801 - lr 1.1111111111111112e-05
+2020-08-26 16:45:47,410 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:46:01,380 Macro Average: 91.85	Macro avg loss: 1.71
+CONLL_03_NEW	91.85	
+2020-08-26 16:46:01,444 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:46:01,447 BAD EPOCHS (no improvement): 11
+2020-08-26 16:46:01,448 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:46:01,448 ==================Saving the current best model: 91.85==================
+2020-08-26 16:46:03,258 ==================Saving the best language model: 91.85==================
+[2020-08-26 16:46:03,277 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:46:04,996 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:46:04,996 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:46:04,998 Current loss interpolation: 1
+['SpanBERT/spanbert-base-cased']
+2020-08-26 16:46:05,174 epoch 10 - iter 0/439 - loss 0.04885334 - samples/sec: 182.26 - decode_sents/sec: 16850.94
+2020-08-26 16:46:17,435 epoch 10 - iter 43/439 - loss 1.32719235 - samples/sec: 112.23 - decode_sents/sec: 1436376.88
+2020-08-26 16:46:31,914 epoch 10 - iter 86/439 - loss 1.55406665 - samples/sec: 95.04 - decode_sents/sec: 225726.00
+2020-08-26 16:46:43,647 epoch 10 - iter 129/439 - loss 1.61601916 - samples/sec: 117.30 - decode_sents/sec: 1336891.89
+2020-08-26 16:46:56,815 epoch 10 - iter 172/439 - loss 1.51066678 - samples/sec: 104.50 - decode_sents/sec: 616664.42
+2020-08-26 16:47:08,879 epoch 10 - iter 215/439 - loss 1.42474732 - samples/sec: 114.07 - decode_sents/sec: 826132.59
+2020-08-26 16:47:21,229 epoch 10 - iter 258/439 - loss 1.42433652 - samples/sec: 111.42 - decode_sents/sec: 460750.62
+2020-08-26 16:47:34,964 epoch 10 - iter 301/439 - loss 1.46951658 - samples/sec: 100.19 - decode_sents/sec: 653830.55
+2020-08-26 16:47:48,736 epoch 10 - iter 344/439 - loss 1.49180544 - samples/sec: 99.92 - decode_sents/sec: 659057.02
+2020-08-26 16:48:00,701 epoch 10 - iter 387/439 - loss 1.46002364 - samples/sec: 115.02 - decode_sents/sec: 954259.64
+2020-08-26 16:48:12,999 epoch 10 - iter 430/439 - loss 1.46032831 - samples/sec: 111.25 - decode_sents/sec: 598623.67
+2020-08-26 16:48:14,952 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:14,952 EPOCH 10 done: loss 1.4492 - lr 5.555555555555556e-06
+2020-08-26 16:48:14,962 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:30,222 Macro Average: 92.33	Macro avg loss: 1.76
+CONLL_03_NEW	92.33	
+2020-08-26 16:48:30,310 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:30,313 BAD EPOCHS (no improvement): 11
+2020-08-26 16:48:30,313 GLOBAL BAD EPOCHS (no improvement): 0
+2020-08-26 16:48:30,313 ==================Saving the current best model: 92.33==================
+2020-08-26 16:48:32,078 ==================Saving the best language model: 92.33==================
+[2020-08-26 16:48:32,145 INFO] Configuration saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/config.json
+[2020-08-26 16:48:33,815 INFO] Model weights saved in resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/spanbert-base-cased/pytorch_model.bin
+2020-08-26 16:48:33,815 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:33,816 loading file resources/taggers/span-bert_10epoch_32batch_0.00005lr_10000lrrate_en_monolingual_nocrf_fast_relearn_sentbatch_sentloss_finetune_saving_nodev_newner3/best-model.pt
+2020-08-26 16:48:34,096 Testing using best model ...
+2020-08-26 16:48:35,324 Finished Embeddings Assignments
+2020-08-26 16:48:48,800 0.8738	0.8792	0.8765
+2020-08-26 16:48:48,803 
+MICRO_AVG: acc 0.7802 - f1-score 0.8765
+MACRO_AVG: acc 0.7591 - f1-score 0.858025
+LOC        tp: 1496 - fp: 161 - fn: 172 - tn: 1496 - precision: 0.9028 - recall: 0.8969 - accuracy: 0.8179 - f1-score: 0.8998
+MISC       tp: 541 - fp: 218 - fn: 161 - tn: 541 - precision: 0.7128 - recall: 0.7707 - accuracy: 0.5880 - f1-score: 0.7406
+ORG        tp: 1403 - fp: 260 - fn: 258 - tn: 1403 - precision: 0.8437 - recall: 0.8447 - accuracy: 0.7303 - f1-score: 0.8442
+PER        tp: 1526 - fp: 78 - fn: 91 - tn: 1526 - precision: 0.9514 - recall: 0.9437 - accuracy: 0.9003 - f1-score: 0.9475
+2020-08-26 16:48:48,805 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:48,805 ----------------------------------------------------------------------------------------------------
+2020-08-26 16:48:48,805 current corpus: CONLL_03_NEW
+2020-08-26 16:48:50,083 Finished Embeddings Assignments
+2020-08-26 16:49:03,224 0.8738	0.8792	0.8765
+2020-08-26 16:49:03,227 
+MICRO_AVG: acc 0.7802 - f1-score 0.8765
+MACRO_AVG: acc 0.7591 - f1-score 0.858025
+LOC        tp: 1496 - fp: 161 - fn: 172 - tn: 1496 - precision: 0.9028 - recall: 0.8969 - accuracy: 0.8179 - f1-score: 0.8998
+MISC       tp: 541 - fp: 218 - fn: 161 - tn: 541 - precision: 0.7128 - recall: 0.7707 - accuracy: 0.5880 - f1-score: 0.7406
+ORG        tp: 1403 - fp: 260 - fn: 258 - tn: 1403 - precision: 0.8437 - recall: 0.8447 - accuracy: 0.7303 - f1-score: 0.8442
+PER        tp: 1526 - fp: 78 - fn: 91 - tn: 1526 - precision: 0.9514 - recall: 0.9437 - accuracy: 0.9003 - f1-score: 0.9475
+

@@ -1,0 +1,79 @@
+/home/wangxy/workspace/flair2/flair/utils/params.py:104: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  dict_merge.dict_merge(params_dict, yaml.load(f))
+2020-09-27 10:05:32,910 Reading data from /home/wangxy/.flair/datasets/enhanced_ud/DM
+2020-09-27 10:05:32,910 Train: /home/wangxy/.flair/datasets/enhanced_ud/DM/train.en.dm_modified.conllu
+2020-09-27 10:05:32,910 Test: /home/wangxy/.flair/datasets/enhanced_ud/DM/test.en.id.dm.conllu
+2020-09-27 10:05:32,910 Dev: /home/wangxy/.flair/datasets/enhanced_ud/DM/dev.en.dm.conllu
+2020-09-27 10:05:54,218 Reading data from /home/wangxy/.flair/datasets/enhanced_ud/DM_OOD
+2020-09-27 10:05:54,218 Train: /home/wangxy/.flair/datasets/enhanced_ud/DM_OOD/train.conllu
+2020-09-27 10:05:54,218 Test: /home/wangxy/.flair/datasets/enhanced_ud/DM_OOD/test.en.ood.dm.conllu
+2020-09-27 10:05:54,218 Dev: /home/wangxy/.flair/datasets/enhanced_ud/DM_OOD/dev.conllu
+2020-09-27 10:05:57,795 {b'<unk>': 0, b'O': 1, b'root': 2, b'': 3, b'compound': 4, b'ARG1': 5, b'measure': 6, b'loc': 7, b'ARG2': 8, b'BV': 9, b'of': 10, b'appos': 11, b'ARG3': 12, b'mwe': 13, b'poss': 14, b'_nor_c': 15, b'_and_c': 16, b'times': 17, b'than': 18, b'part': 19, b'subord': 20, b'conj': 21, b'comp': 22, b'neg': 23, b'_or_c': 24, b'_but_c': 25, b'comp_so': 26, b'comp_less': 27, b'plus': 28, b'ARG4': 29, b'_rather+than_c': 30, b'_as+well+as_c': 31, b'comp_enough': 32, b'temp': 33, b'discourse': 34, b'comp_too': 35, b'parenthetical': 36, b'_but+not_c': 37, b'_and+so_c': 38, b'_but+also_c': 39, b'_not_c': 40, b'_then_c': 41, b'manner': 42, b'_and+also_c': 43, b'_except_c': 44, b'_and+then_c': 45, b'_and+not_c': 46, b'_yet_c': 47, b'_versus_c': 48, b'_even_c': 49, b'_instead+of_c': 50, b'_plus_c': 51, b'_and+thus_c': 52, b'_minus_c': 53, b'_and+yet_c': 54, b'_after_c': 55, b'_if+not_c': 56, b'_not+to+mention_c': 57, b'_though_c': 58, b'comp_not+so': 59, b'_much+less_c': 60, b'_formerly_c': 61, b'_except+that_c': 62, b'comp_not+too': 63, b'<START>': 64, b'<STOP>': 65}
+2020-09-27 10:05:57,795 Corpus: 33916 train + 1692 dev + 3259 test sentences
+[2020-09-27 10:05:57,796 INFO] loading Word2VecKeyedVectors object from /home/wangxy/.flair/embeddings/en-fasttext-news-300d-1M
+[2020-09-27 10:06:01,734 INFO] loading vectors from /home/wangxy/.flair/embeddings/en-fasttext-news-300d-1M.vectors.npy with mmap=None
+[2020-09-27 10:06:02,442 INFO] setting ignored attribute vectors_norm to None
+[2020-09-27 10:06:02,442 INFO] loaded /home/wangxy/.flair/embeddings/en-fasttext-news-300d-1M
+Traceback (most recent call last):
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fe471576748>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='s3.eu-central-1.amazonaws.com', port=443): Max retries exceeded with url: /alan-nlp/resources/embeddings-v0.4.3/lm-jw300-forward-v0.1.pt (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fe471576748>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train_with_teacher.py", line 78, in <module>
+    student=config.create_student(nocrf=args.nocrf)
+  File "/home/wangxy/workspace/flair2/flair/config_parser.py", line 231, in create_student
+    return self.create_model(self.config,pretrained=self.load_pretrained(self.config), is_student=True)
+  File "/home/wangxy/workspace/flair2/flair/config_parser.py", line 186, in create_model
+    embeddings, word_map, char_map, lemma_map, postag_map=self.create_embeddings(config['embeddings'])
+  File "/home/wangxy/workspace/flair2/flair/config_parser.py", line 161, in create_embeddings
+    embedding_list.append(getattr(Embeddings,embedding.split('-')[0])(**embeddings[embedding]))
+  File "/home/wangxy/workspace/flair2/flair/embeddings.py", line 2356, in __init__
+    model = cached_path(base_path, cache_dir=cache_dir)
+  File "/home/wangxy/workspace/flair2/flair/file_utils.py", line 88, in cached_path
+    return get_from_cache(url_or_filename, dataset_cache)
+  File "/home/wangxy/workspace/flair2/flair/file_utils.py", line 161, in get_from_cache
+    response = requests.head(url, headers={"User-Agent": "Flair"})
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/api.py", line 101, in head
+    return request('head', url, **kwargs)
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/wangxy/anaconda3/envs/parser/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='s3.eu-central-1.amazonaws.com', port=443): Max retries exceeded with url: /alan-nlp/resources/embeddings-v0.4.3/lm-jw300-forward-v0.1.pt (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fe471576748>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
