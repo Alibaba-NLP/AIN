@@ -4,7 +4,9 @@
 The code is mainly for our EMNLP 2020 paper: [AIN: Fast and Accurate Sequence Labeling with Approximate Inference Network](http://faculty.sist.shanghaitech.edu.cn/faculty/tukw/emnlp20ain.pdf).
 The code is mainly based on [MultilangStructureKD](https://github.com/Alibaba-NLP/MultilangStructureKD) with a lot of modifications.
 
-AINs approximate the CRF inference steps. Instead of Forward-backward algorithm and Viterbi algorithm that requires sequential compuation over the input sequence, we use Mean-Field Variational Inference algorithm to approximate the CRF inference which can be paralleled over the sequence. In the paper, we show that AIN on the first-order CRF is about 10.2 and 4.4 times faster than the traditional CRF approach in training and prediction respectively with long sentences. Moreover, AINs achieves competitive accuracy with the tranditional CRF approach. Please refer to the paper for more details.
+AINs approximate the CRF inference steps. Instead of Forward-backward algorithm and Viterbi algorithm that requires sequential compuation over the input sequence, we use Mean-Field Variational Inference algorithm to approximate the CRF inference which can be paralleled over the sequence. In the paper, we show that AIN on the first-order CRF is about **10.2** and **4.4** times faster than the traditional CRF approach in training and prediction respectively with long sentences. Moreover, AINs achieves competitive accuracy with the tranditional CRF approach. Please refer to the paper for more details. 
+
+Note that the speed comparison is based on the Viterbi decoder of [NCRF++](https://github.com/jiesutd/NCRFpp) for fairness, which can be parallelized over batch. However, the Viterbi decoder in this code is from [Flair](https://github.com/flairNLP/flair). As a result, the prediction speed improvement in this code maybe higher than the reported value in the paper. 
 
 ---
 
