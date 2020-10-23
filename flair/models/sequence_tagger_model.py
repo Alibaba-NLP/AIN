@@ -973,6 +973,37 @@ class SequenceTagger(flair.nn.Model):
 
 		return tags, all_tags
 
+	def _obtain_labels_speed(
+		self, feature, sentences, get_all_tags: bool = False
+	) -> (List[List[Label]], List[List[List[Label]]]):
+		"""
+		Remove the tag assignment in the speed comparison
+		"""
+
+		lengths: List[int] = [len(sentence.tokens) for sentence in sentences]
+		tags = []
+		all_tags = []
+		
+		# if self.use_mfvi:
+		#     token_feats=self.sent_feats
+		#     unary_score=features
+		#     
+		#     q_value=self.mfvi(token_feats,unary_score,mask)
+		#     q_value=self.mfvi()
+		if not self.use_crf:
+			distribution = F.softmax(feature, dim=-1)
+			_, indices = torch.max(feature, -1)
+			sentrange=torch.arange(0,distribution.shape[1]).long().cuda()
+		else:
+			for i, vals in enumerate(zip(feature, lengths)):
+				feats, length=vals
+				if self.use_crf:
+					confidences, tag_seq, scores = self._viterbi_decode(
+						feats[:length], all_scores=get_all_tags, current_idx = i,
+					)
+
+		return None
+
 	def _viterbi_decode(self, feats, all_scores: bool = False, current_idx = 0):
 		backpointers = []
 		backscores = []
@@ -1695,7 +1726,9 @@ class FastSequenceTagger(SequenceTagger):
 					if not speed_test:
 						mask=self.mask
 						loss = self._calculate_loss(features, batch, mask)
-					tags, _ = self._obtain_labels(features, batch)
+						tags, _ = self._obtain_labels(features, batch)
+					else:
+						self._obtain_labels_speed(features, batch)
 				if not speed_test:
 					eval_loss += loss
 
