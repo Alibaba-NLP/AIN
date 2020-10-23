@@ -18,7 +18,7 @@ Here is a comparison of speed and accuracy of CRF and AINs on CoNLL 2003 English
 | ------------- | :---: | :---: |
 | Word + CharCNN + Softmax | 91.11 | 5783 |
 | Word + CharCNN + CRF | 91.32 | 297 |
-| Word + CharCNN + CRF (NCRF++) | 91.35 | 1900~ |
+| Word + CharCNN + CRF [(NCRF++)](https://github.com/jiesutd/NCRFpp) | 91.35 | 1900~ |
 | Word + CharCNN + AIN-1O | 91.34 | 4278 |
 | Word + CharCNN + AIN-2O | 91.41 | 3697 |
 
