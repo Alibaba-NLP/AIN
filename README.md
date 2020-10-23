@@ -10,6 +10,18 @@ Note that the speed comparison is based on the Viterbi decoder of [NCRF++](https
 
 ---
 
+## Performance
+
+Here is a comparison of speed and accuracy of CRF and AINs on CoNLL 2003 English NER dataset. Following [NCRF++](https://github.com/jiesutd/NCRFpp), we report max test F1 score. For the speed comparison, we run on a single Nvidia GTX-1080 GPU with a batch size of 32.
+
+| MODEL          |  F1    | Speed (Sents/s) |
+| ------------- | :---: | :---: |
+| Word + CharCNN + Softmax | 91.11 | 5783 |
+| Word + CharCNN + CRF | 91.32 | 297 |
+| Word + CharCNN + CRF (NCRF++) | 91.35 | 1900~ |
+| Word + CharCNN + AIN-1O | 91.34 | 4278 |
+| Word + CharCNN + AIN-2O | 91.41 | 3697 |
+
 ## Requirements
 
 The project is based on PyTorch 1.1+ and Python 3.6+. We create the virtual environment based on [anaconda](https://www.anaconda.com/) (The requirements are directly extracted from my environment, therefore there exists some non-essential packages like TensorFlow, we will update the requirements in the future):
